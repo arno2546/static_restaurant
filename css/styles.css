@@ -91,3 +91,44 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
+
+@media (min-width:1200px){
+
+}
+/*********************Medium Screen Devices**********************************/
+@media (min-width:992px) and (max-width:1199px){
+  #logo-img{
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand a h1{
+    font-size:2em;
+  }
+}
+/*********************Extra small Screen Devices*****************************/
+@media (max-width:767px){
+  .navbar-brand{
+    padding-top: 5px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 6vw;
+  }
+  .navbar-brand p{
+    font-size: .8em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img{
+    height: 20px;
+  }
+  #collapsable-nav a {
+    font-size:1.5em;
+  }
+  #collapsable-nav a span{
+    font-size: .9em;
+    margin-right: 7px;
+  }
+}
