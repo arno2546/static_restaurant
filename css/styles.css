@@ -92,8 +92,52 @@ body {
 }
 /* END HEADER */
 
+/* HOME PAGE */
+#Menu-tile, #specials-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border:2px solid #3F0C1F;
+  overflow: hidden;
+  box-shadow: 0 0 50px #3F0C1F;
+}
+#Menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+  transition-duration: .5s;
+}
+#Menu-tile{
+  background:url(../images/menu-tile.jpg)no-repeat;
+  background-position: center;
+}
+#specials-tile{
+  background:url(../images/specials-tile.jpg)no-repeat;
+  background-position: center;
+}
+#Menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+#Menu-tile span:hover, #specials-tile span:hover, #map-tile span:hover{
+  opacity: 1;
+  transition-duration: .5s;
+}
+/*********************Large Screen Devices**********************************/
 @media (min-width:1200px){
-
+  .jumbotron{
+    background: url('../images/jumbotron_1200.jpg')no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
 }
 /*********************Medium Screen Devices**********************************/
 @media (min-width:992px) and (max-width:1199px){
@@ -105,6 +149,21 @@ body {
   }
   .navbar-brand a h1{
     font-size:2em;
+  }
+  .jumbotron{
+    background: url('../images/jumbotron_992.jpg')no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+/*********************Small Screen Devices**********************************/
+@media (min-width:768px) and (max-width:991px){
+  .jumbotron{
+    background: url('../images/jumbotron_768.jpg')no-repeat;
+    height: 432px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
   }
 }
 /*********************Extra small Screen Devices*****************************/
@@ -130,5 +189,32 @@ body {
   #collapsable-nav a span{
     font-size: .9em;
     margin-right: 7px;
+  }
+  .container .jumbotron{
+    margin-top:30px;
+    padding: 0;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+  .btn{
+    border:2px solid #f6b319;
+    font-size:1.7em;
+    font-weight: bold;
+    color: #fff;
+  }
+  #Menu-tile, #specials-tile{
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+@media (max-width:479px){
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+
+  #Menu-tile,#specials-tile{
+    width: 280px;
+    margin:0 auto 15px;
   }
 }
